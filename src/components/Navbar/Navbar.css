@@ -1,0 +1,86 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  background: rgba(0, 0, 0, 0.1); /* Fully transparent until hover */
+  backdrop-filter: blur(8px);
+  transition: background 0.3s ease;
+}
+
+.navbar-username {
+  color: ivory;
+  margin-right: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.navbar:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: ivory;
+  font-family: 'Playfair Display', serif;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: ivory;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffd700;
+}
+
+.atelier-link {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: ivory;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+  color: #ffd700;
+}
+
+.search-container {
+  position: relative;
+}
+
+.hidden-search-input {
+  position: absolute;
+  left: -9999px; /* Hide input visually */
+}
+
+
+
+
