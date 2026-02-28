@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from "./components/Navbar/Navbar"; // ✅ Make sure this path matches your actual folder structure
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/LandingPage';
 import Auth from './pages/LandingPage/Auth/Auth';
@@ -67,6 +68,7 @@ function App() {
           <Route path="/editorial/winter-25" element={<Winter25 />} />
           <Route path="/editorial/debutante-edge" element={<DebutanteEdge />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
