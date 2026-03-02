@@ -1,21 +1,9 @@
-import React from 'react';
-import { menShirts } from '../../data/menProducts';
-import ProductCard from '../../components/ProductCard';
-import './CategoryPage.css';
+import CategoryPage from "../Women/CategoryPage";
 
-const MenShirts = () => {
-  return (
-    <div className="category-container">
-      <h2 className="category-title">Men's Shirts</h2>
-      <div className="products-grid">
-        {menShirts.map((item) => (
-          <ProductCard key={item.id} {...item} />
-        ))}
-      </div>
-    </div>
-  );
+const Shirts = () => {
+  return <CategoryPage category="men-shirts" title="Men's Shirts" />;
 };
 
-export default MenShirts;
+export default Shirts;
 
 

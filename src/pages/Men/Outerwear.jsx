@@ -1,19 +1,7 @@
-import React from "react";
-import { menOuterwear } from "../../data/menProducts";
-import ProductCard from '../../components/ProductCard';
-import "../Men/CategoryPage.css";
+import CategoryPage from "../Women/CategoryPage";
 
 const Outerwear = () => {
-  return (
-    <div className="category-page">
-      <h2 className="category-title">Men’s Outerwear</h2>
-      <div className="product-grid">
-        {menOuterwear.map((product) => (
-          <ProductCard key={product.id} {...product} />
-        ))}
-      </div>
-    </div>
-  );
+  return <CategoryPage category="men-outerwear" title="Men's Outerwear" />;
 };
 
 export default Outerwear;
